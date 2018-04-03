@@ -4,22 +4,22 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class PlayerService {
-  players: FirebaseListObservable<any[]>;
+  player: FirebaseListObservable<any[]>;
 
 
   constructor(private database: AngularFireDatabase) {
-  this.players = database.list('players');
+  this.player = database.list('player');
 }
   getPlayers() {
-    return this.players;
+    return this.player;
   }
 
   addPlayer(newPlayer: Player) {
-    this.players.push(newPlayer);
+    this.player.push(newPlayer);
   }
 
-  getPlayersById(playerId: string){
-    return this.database.object('players/' + playerId);
+  getPlayerById(playerId: string){
+    return this.database.object('player/' + playerId);
   }
 
 

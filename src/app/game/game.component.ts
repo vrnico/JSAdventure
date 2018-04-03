@@ -3,6 +3,8 @@ import { PlayerService } from '../player.service';
 import { Router } from '@angular/router';
 import { Player } from '../player.model';
 import { FirebaseObjectObservable } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2/database';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-game',
@@ -11,17 +13,13 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
   providers: [PlayerService]
 })
 export class GameComponent implements OnInit {
-  PlayerId: string;
-  PlayerToDisplay;
+  playerToDisplay;
 
-
-  constructor(private route: Router, private location: Location, private playerService: PlayerService) { }
+  constructor(private route: ActivatedRoute, private playerService: PlayerService) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-     this.PlayerId = urlParameters['id'];
-   });
-   this.PlayerToDisplay = this.PlayerService.getPlayerById(this.PlayerId);
+    this.playerToDisplay = this.playerService.getPlayerById();
+    console.log(this.playerName);
   }
 
 }
