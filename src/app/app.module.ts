@@ -15,6 +15,14 @@ import { BadDoorComponent } from './bad-door/bad-door.component';
 import { UserInputComponent } from './user-input/user-input.component';
 import { MerchantComponent } from './merchant/merchant.component';
 import { GameComponent } from './game/game.component';
+import { GoblinGoodComponent } from './goblin-good/goblin-good.component';
+import { GoblinBadComponent } from './goblin-bad/goblin-bad.component';
+import { TreeGoodComponent } from './tree-good/tree-good.component';
+import { TreeBadComponent } from './tree-bad/tree-bad.component';
+import { GoblinLoveComponent } from './goblin-love/goblin-love.component';
+import { GoblinHateComponent } from './goblin-hate/goblin-hate.component';
+import { BrushComponent } from './brush/brush.component';
+import { WashClothComponent } from './wash-cloth/wash-cloth.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +40,15 @@ export const firebaseConfig = {
     BadDoorComponent,
     UserInputComponent,
     MerchantComponent,
-    GameComponent
+    GameComponent,
+    GoblinGoodComponent,
+    GoblinBadComponent,
+    TreeGoodComponent,
+    TreeBadComponent,
+    GoblinLoveComponent,
+    GoblinHateComponent,
+    BrushComponent,
+    WashClothComponent
   ],
   imports: [
     BrowserModule,

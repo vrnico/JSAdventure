@@ -13,13 +13,6 @@ import { ActivatedRoute } from '@angular/router';
   providers: [PlayerService]
 })
 export class GameComponent implements OnInit {
-  playerToDisplay;
-
-  constructor(private route: ActivatedRoute, private playerService: PlayerService) { }
-
   ngOnInit() {
-    this.playerToDisplay = this.playerService.getPlayerById();
-    console.log(this.playerName);
   }
-
 }
