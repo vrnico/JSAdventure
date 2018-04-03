@@ -23,6 +23,12 @@ import { GoblinLoveComponent } from './goblin-love/goblin-love.component';
 import { GoblinHateComponent } from './goblin-hate/goblin-hate.component';
 import { BrushComponent } from './brush/brush.component';
 import { WashClothComponent } from './wash-cloth/wash-cloth.component';
+import { TreeLoveComponent } from './tree-love/tree-love.component';
+import { TreeHateComponent } from './tree-hate/tree-hate.component';
+import { FreeWolfComponent } from './free-wolf/free-wolf.component';
+import { GoblinFamComponent } from './goblin-fam/goblin-fam.component';
+import { PurpleStoneComponent } from './purple-stone/purple-stone.component';
+import { KillPurpleComponent } from './kill-purple/kill-purple.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -48,7 +54,13 @@ export const firebaseConfig = {
     GoblinLoveComponent,
     GoblinHateComponent,
     BrushComponent,
-    WashClothComponent
+    WashClothComponent,
+    TreeLoveComponent,
+    TreeHateComponent,
+    FreeWolfComponent,
+    GoblinFamComponent,
+    PurpleStoneComponent,
+    KillPurpleComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,13 @@ import { GoblinLoveComponent } from './goblin-love/goblin-love.component';
 import { GoblinHateComponent } from './goblin-hate/goblin-hate.component';
 import { BrushComponent } from './brush/brush.component';
 import { WashClothComponent } from './wash-cloth/wash-cloth.component';
+import { TreeLoveComponent } from './tree-love/tree-love.component';
+import { TreeHateComponent } from './tree-hate/tree-hate.component';
+import { FreeWolfComponent } from './free-wolf/free-wolf.component';
+import { GoblinFamComponent } from './goblin-fam/goblin-fam.component';
+import { PurpleStoneComponent } from './purple-stone/purple-stone.component';
+import { KillPurpleComponent } from './kill-purple/kill-purple.component';
+
 
 
 const appRoutes: Routes = [
@@ -67,6 +74,30 @@ const appRoutes: Routes = [
   {
     path: 'wash-cloth',
     component: WashClothComponent
+  },
+  {
+    path: 'tree-love',
+    component: TreeLoveComponent
+  },
+  {
+    path: 'tree-hate',
+    component: TreeHateComponent
+  },
+  {
+    path: 'free-wolf',
+    component: FreeWolfComponent
+  },
+  {
+    path: 'goblin-fam',
+    component: GoblinFamComponent
+  },
+  {
+    path: 'purple-stone',
+    component: PurpleStoneComponent
+  },
+  {
+    path: 'kill-purple',
+    component: KillPurpleComponent
   }
 ];
 
