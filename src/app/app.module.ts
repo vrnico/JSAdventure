@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +14,14 @@ import { GoodDoorComponent } from './good-door/good-door.component';
 import { BadDoorComponent } from './bad-door/bad-door.component';
 import { UserInputComponent } from './user-input/user-input.component';
 import { MerchantComponent } from './merchant/merchant.component';
+import { GameComponent } from './game/game.component';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 
 @NgModule({
@@ -20,13 +31,16 @@ import { MerchantComponent } from './merchant/merchant.component';
     GoodDoorComponent,
     BadDoorComponent,
     UserInputComponent,
-    MerchantComponent
+    MerchantComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
