@@ -1,0 +1,11 @@
+p{
+  text-align: center;
+}
+
+
+.container{
+  background-image: url(https://images2.alphacoders.com/549/thumb-1920-549939.jpg);
+  color: white;
+  font-weight: bold;
+  padding-top: 50px;
+}
