@@ -29,6 +29,8 @@ import { FreeWolfComponent } from './free-wolf/free-wolf.component';
 import { GoblinFamComponent } from './goblin-fam/goblin-fam.component';
 import { PurpleStoneComponent } from './purple-stone/purple-stone.component';
 import { KillPurpleComponent } from './kill-purple/kill-purple.component';
+import { FrontComponent } from './front/front.component';
+import { BackComponent } from './back/back.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -60,7 +62,9 @@ export const firebaseConfig = {
     FreeWolfComponent,
     GoblinFamComponent,
     PurpleStoneComponent,
-    KillPurpleComponent
+    KillPurpleComponent,
+    FrontComponent,
+    BackComponent
   ],
   imports: [
     BrowserModule,
